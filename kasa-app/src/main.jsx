@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import App from "./pages/App.jsx"
-import './index.css'
+import './index.scss'
 import Home from "./pages/Home/index.jsx";
 import About from "./pages/About/index.jsx";
 import NotFound from "./pages/NotFound/index.jsx";

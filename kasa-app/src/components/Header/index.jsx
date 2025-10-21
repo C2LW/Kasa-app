@@ -1,5 +1,6 @@
 import Logo from "../../assets/logo.png"
 import { Link } from "react-router"
+import "../../styles/components/Header/styles.scss"
 
 function Header() {
     return (
@@ -8,7 +9,7 @@ function Header() {
                 <img src={Logo} alt="Logo KASA" />
             </div>
             <nav className="navBar__link">
-                <Link to="/">Home</Link>
+                <Link className="navBar__link--isActive" to="/">Home</Link>
                 <Link to="/About">A Propos</Link>
             </nav>
         </div>
