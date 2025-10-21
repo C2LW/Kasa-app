@@ -1,0 +1,23 @@
+$primary-font: "Montserrat", sans-serif;
+
+.foot {
+    background-color: black;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    height: 209px;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+        padding-top: 30px;
+        width: 122px;
+        height: 39.5px;
+    }
+
+    &__copyright {
+        padding-top: 40px;
+        font-family: $primary-font;
+        font-size: 1.5em;
+    }
+}

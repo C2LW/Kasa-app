@@ -1,12 +1,12 @@
-import Logo from "../../assets/logo.png"
 import { Link } from "react-router"
 import "../../styles/components/Header/styles.scss"
+import Logo from "../Logo/index.jsx"
 
 function Header() {
     return (
         <div className="navBar">
             <div className="navBar__logo">
-                <img src={Logo} alt="Logo KASA" />
+                <Logo color="#FF6060" className="header__logo" />
             </div>
             <nav className="navBar__link">
                 <Link className="navBar__link--isActive" to="/">Home</Link>
@@ -17,3 +17,5 @@ function Header() {
 }
 
 export default Header
+
+
