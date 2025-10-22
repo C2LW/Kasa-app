@@ -5,12 +5,14 @@ $primary-font: "Montserrat", sans-serif;
     width: 340px;
     height: 340px;
     margin: 10px;
+    transition: transform 0.3s ease;
 
     &__img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         border-radius: 10px;
+        transition: transform 0.4s ease;
     }
 
     &__title {
@@ -22,5 +24,34 @@ $primary-font: "Montserrat", sans-serif;
         font-size: 1.4rem;
         font-weight: 700;
         margin: 0;
+        transition: all 0.4s ease;
+        z-index: 2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+
+        &__title {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        &::after {
+            opacity: 1;
+        }
     }
 }
