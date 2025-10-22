@@ -9,6 +9,8 @@ $primary-font: "Montserrat", sans-serif;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 
     &__logo {
         padding-top: 30px;

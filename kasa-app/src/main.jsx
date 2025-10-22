@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound/index.jsx";
 import AccomodationSheet from "./pages/Accomodations/index.jsx";
 
 
+
 const root = document.getElementById("root");
 
 ReactDOM.createRoot(root).render(
