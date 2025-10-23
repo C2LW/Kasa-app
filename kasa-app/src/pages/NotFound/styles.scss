@@ -1,0 +1,34 @@
+$primary-font: "Montserrat", sans-serif;
+$primary: #ff6060;
+
+
+.main {
+    max-width: 1440px;
+}
+
+.not-found-container {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $primary-font;
+    gap: 80px;
+
+    h2 {
+
+        color: #ff6060;
+        font-size: 10rem;
+        font-weight: bold;
+    }
+
+    span {
+        color: $primary;
+        font-size: 1.5rem;
+    }
+
+    .navBar__link {
+        text-decoration: underline;
+        font-size: 1.1rem;
+    }
+}
