@@ -1,7 +1,10 @@
+import { useParams } from "react-router"
 
 
 function AccomodationSheet() {
-    return <h1> FICHE LOGEMENT </h1>
+    let params = useParams()
+
+    return <h1> FICHE LOGEMENT {params.uid} </h1>
 }
 
 export default AccomodationSheet

@@ -3,10 +3,10 @@ import "./styles.scss"
 
 function Footer() {
     return (
-        <div className="foot">
+        <footer>
             <Logo color="#FFFFFF" className="foot__logo" />
             <span className="foot__copyright">© 2020 Kasa. All rights reserved</span>
-        </div>
+        </footer>
     )
 }
 
