@@ -1,11 +1,11 @@
 import "./styles.scss"
-import ImgBanner from "../../assets/image-1.png"
 
-function Banner() {
+
+function Banner({src, alt, title}) {
     return (
     <div className="banner">
-        <img className="banner__img" src={ImgBanner} alt="Image bannière de bienvenue" />
-        <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+        <img className="banner__img" src={src} alt={alt} />
+        <h1 className="banner__title">{title}</h1>
     </div>
     )
 }
