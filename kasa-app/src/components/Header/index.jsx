@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 import "./styles.scss"
 import Logo from "../Logo/index.jsx"
 import NavBar from "../NavBar/index.jsx"

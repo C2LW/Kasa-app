@@ -13,3 +13,9 @@ export function getData() {
       return [];
     });
 }
+
+
+export async function getOne(id) {
+  const all = await getData()
+  return all.find((item) => item.id === id) ?? null
+}

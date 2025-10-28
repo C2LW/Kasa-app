@@ -1,8 +1,4 @@
-/** FUNCTION TO RETURN LOGO WITH SVG TYPE
- * 
- * @param {COLOR} props 
- * @returns
- */
+
 function Logo (props) {
     return (
     <svg className={props.className} width="211" height="68" viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
