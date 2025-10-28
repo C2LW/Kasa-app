@@ -1,0 +1,39 @@
+$primary-font: "Montserrat", sans-serif;
+$primary: #ff6060;
+
+.main {
+    max-width: 1440px;
+}
+
+.accom {
+    margin: 50px 100px 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        margin: 0;
+
+        &--title {
+            color: $primary;
+            font-family: $primary-font;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+
+        &--location {
+            color: #000;
+            font-family: $primary-font;
+            font-size: 1rem;
+            font-weight: 500;
+            padding-top: 0.1rem;
+        }
+    }
+
+    &__right {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}

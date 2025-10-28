@@ -1,6 +1,23 @@
+$primary-font: "Montserrat", sans-serif;
+$primary: #ff6060;
+
 .avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 
-    &__title {}
+    &__title {
+        font-family: $primary-font;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $primary;
+    }
 
-    &__content {}
+    &__img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
 }

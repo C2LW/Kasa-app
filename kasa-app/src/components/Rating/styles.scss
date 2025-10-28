@@ -3,10 +3,11 @@ $primary: #ff6060;
 
 .rating {
     color: $primary;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 15px;
     padding: 8px 10px
 }

@@ -5,9 +5,14 @@ import { getOne } from "../../datas/api.js";
 import Collapse from "../../components/Collapse/index.jsx";
 import Header from "../../components/Header/index.jsx";
 import Footer from "../../components/Footer/index.jsx";
+import Avatar from "../../components/Avatar/index.jsx";
 
 import Carrousel from "../../components/Carrousel/index.jsx";
 import Rating from "../../components/Rating/index.jsx";
+
+import "./styles.scss"
+
+
 
 export default function AccomodationSheet() {
 
@@ -30,7 +35,8 @@ export default function AccomodationSheet() {
     if (loading) return <main>Chargement…</main>;
     if (!lodging) return <Navigate to="/404" replace />;
 
-    const { title, location, pictures = [], description, equipments = [], host, rating, tags = [] } = lodging;
+    /* const { title, location, pictures = [], description, equipments = [], host, rating, tags = [] } = lodging; */
+    const { title, location, pictures = [], host, rating = [] } = lodging;
 
     return (
         <>
@@ -38,40 +44,16 @@ export default function AccomodationSheet() {
                 <Header />
                 <Carrousel pictures={pictures} title={title} />
 
-                <section className="accom__head">
+                <section className="accom">
                     <div className="accom__left">
-                        <h1 className="accom__title">{title}</h1>
-                        <p className="accom__location">{location}</p>
-
-                        {tags.length > 0 && (
-                            <ul className="accom__tags">
-                                {tags.map((t) => (
-                                    <li key={t} className="tag">{t}</li>
-                                ))}
-                            </ul>
-                        )}
+                        <h1 className="accom__left--title">{title}</h1>
+                        <p className="accom__left--location">{location}</p>
                     </div>
 
                     <div className="accom__right">
-                        {host && (
-                            <div className="host">
-                                <span className="host__name">{host.name}</span>
-                                {host.picture && (
-                                    <img className="host__pic" src={host.picture} alt={`Photo de ${host.name}`} />
-                                )}
-                            </div>
-                        )}
+                        <Avatar title={host.name} picture={host.picture} />
                         <Rating value={Number(rating) || 0} />
                     </div>
-                </section>
-
-                <section className="accom__details">
-                    {/* ICI : on réutilise TON Collapse existant */}
-                    <Collapse title="Description" content={description} />
-                    <Collapse
-                        title="Équipements"
-                        content={<ul>{equipments.map((e) => <li key={e}>{e}</li>)}</ul>}
-                    />
                 </section>
             </div>
             <Footer />
