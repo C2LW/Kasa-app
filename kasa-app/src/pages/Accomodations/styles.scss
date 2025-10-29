@@ -13,6 +13,9 @@ $primary: #ff6060;
     align-items: center;
 
     &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         margin: 0;
 
         &--title {
@@ -20,6 +23,7 @@ $primary: #ff6060;
             font-family: $primary-font;
             font-size: 1.7rem;
             font-weight: bold;
+            padding-bottom: 0.5rem;
         }
 
         &--location {
@@ -29,6 +33,14 @@ $primary: #ff6060;
             font-weight: 500;
             padding-top: 0.1rem;
             margin: 0;
+            padding-bottom: 1rem;
+        }
+
+        &--tags {
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
         }
     }
 
@@ -37,4 +49,20 @@ $primary: #ff6060;
         display: flex;
         flex-direction: column;
     }
+}
+
+.collapse-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 25px;
+    margin: 50px 100px 0 100px;
+
+}
+
+.collapse-content .collapse {
+    margin: 0;
+    width: 40%;
+    flex-grow: 1;
 }
