@@ -17,22 +17,22 @@ import "./styles.scss"
 export default function AccomodationSheet() {
 
     const { uid } = useParams()
-    const [loading, setLoading] = useState(true)
-    const [lodging, setLodging] = useState(null)
+    const [lodging, setLodging] = useState(undefined)
 
     useEffect(() => {
-        let alive = true;
+        let cancelled = false;
+
         (async () => {
             const item = await getOne(uid);
-            if (alive) setLodging(item ?? null);
-            if (alive) setLoading(false);
+            if (!cancelled) setLodging(item ?? null);
         })();
+
         return () => {
-            alive = false;
+            cancelled = true;
         };
     }, [uid]);
 
-    if (loading) return <main>Chargement…</main>;
+    if (lodging === undefined) return null;
     if (!lodging) return <Navigate to="/404" replace />;
 
     /* const { title, location, pictures = [], description, equipments = [], host, rating, tags = [] } = lodging; */
