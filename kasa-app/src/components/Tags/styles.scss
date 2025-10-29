@@ -1,5 +1,20 @@
-.tags {
+$primary-font: "Montserrat", sans-serif;
+$primary: #ff6060;
 
-    &tags__content {}
+.tags {
+    width: 115px;
+    height: 25px;
+    background-color: $primary;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &tags__content {
+        font-family: $primary-font;
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 
 }
