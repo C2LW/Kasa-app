@@ -12,11 +12,11 @@ function Home() {
 
     return (
         <>
-            <div className="main">
+            <main className="main">
                 <Header />
                 <Banner src={ImgBanner} alt="Image d'un paysage" title="Chez vous, partout et ailleurs" />
                 <Galerie />
-            </div>
+            </main>
             <Footer />
         </>
     )

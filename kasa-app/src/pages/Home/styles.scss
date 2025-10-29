@@ -1,3 +1,10 @@
+@import url(../../styles/var.scss);
+
+
 .main {
-    max-width: 1440px;
+    margin: 2vh 12vw 0;
+
+    @media (max-width: 450px) {
+        margin: 2vh 12vw 0;
+    }
 }
