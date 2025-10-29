@@ -64,7 +64,12 @@ export default function AccomodationSheet() {
                 </section>
                 <div className="collapse-content">
                     <Collapse title="Description" content={description} />
-                    <Collapse title="Equipements" content={equipments} />
+                    <Collapse title="Equipements" content={
+                        <ul>
+                            {equipments.map((e) =>
+                                <li key={e}>{e}</li>
+                            )}
+                        </ul>} />
                 </div>
             </div>
             <Footer />
