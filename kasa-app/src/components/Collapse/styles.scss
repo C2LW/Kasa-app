@@ -6,6 +6,10 @@ $primary: #ff6060;
     overflow: hidden;
     margin: 0 165px 20px 165px;
 
+    @media (max-width: 450px) {
+        margin: 0 25px 20px 25px;
+    }
+
     &__header {
         background: $primary;
         color: white;
@@ -33,6 +37,8 @@ $primary: #ff6060;
         transition: transform 0.3s ease;
         font-size: 1.5rem;
         margin: 0;
+        width: 22px;
+        height: 22px;
     }
 
     .up {
