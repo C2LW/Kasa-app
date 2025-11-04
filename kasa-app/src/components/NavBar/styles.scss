@@ -18,6 +18,17 @@ $primary-font: "Montserrat", sans-serif;
         font-weight: 500;
         font-size: 1.5em;
 
+        &--active {
+            color: black;
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 1.5em;
+
+            @media (max-width: 450px) {
+                font-size: 0.75em;
+            }
+        }
+
         @media (max-width: 450px) {
             font-size: 0.75em;
         }

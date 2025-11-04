@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
 import "./styles.scss"
 import Logo from "../Logo/index.jsx"
 import NavBar from "../NavBar/index.jsx"
 
-function Header() {
+function Header({ isHome, isAbout }) {
+
     return (
         <header>
-                <Logo color="#FF6060" className="logo" />
-                <NavBar />
+            <Logo color="#FF6060" className="logo" />
+            <NavBar isHome={isHome} isAbout={isAbout} />
         </ header>
     )
 }

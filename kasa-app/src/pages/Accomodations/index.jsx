@@ -41,7 +41,7 @@ export default function AccomodationSheet() {
     return (
         <>
             <div className="main">
-                <Header />
+                <Header isHome="" isAbout="" />
                 <Carrousel pictures={pictures} title={title} />
 
                 <section className="accom">

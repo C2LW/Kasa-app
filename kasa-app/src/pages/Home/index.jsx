@@ -13,7 +13,7 @@ function Home() {
     return (
         <>
             <main className="main">
-                <Header />
+                <Header isHome="--active" isAbout="" />
                 <Banner src={ImgBanner} alt="Image d'un paysage" title="Chez vous, partout et ailleurs" />
                 <Galerie />
             </main>
