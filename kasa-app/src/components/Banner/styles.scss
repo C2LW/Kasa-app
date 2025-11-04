@@ -2,7 +2,7 @@ $primary-font: "Montserrat", sans-serif;
 
 .banner {
     position: relative;
-    margin: 0 25px 20px 25px;
+    margin: 0 25px 22px 25px;
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -42,14 +42,9 @@ $primary-font: "Montserrat", sans-serif;
             font-size: 1.5rem;
             font-weight: bold;
             text-shadow: none;
-            left: 55%;
-            width: 100%;
-
-            .mobile-break {
-                display: inline;
-            }
+            left: 42%;
+            width: 220px;
+            height: auto;
         }
     }
-
-
 }

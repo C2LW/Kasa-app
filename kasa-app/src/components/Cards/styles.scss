@@ -10,6 +10,7 @@ $primary-font: "Montserrat", sans-serif;
     @media (max-width: 450px) {
         width: auto;
         height: 255px;
+        margin: 0;
     }
 
     &__img {
