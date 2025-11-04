@@ -10,6 +10,10 @@ $primary: #ff6060;
     align-items: center;
     justify-items: center;
 
+    @media (max-width: 450px) {
+        border-radius: 5px;
+    }
+
 
     &__content {
         font-family: $primary-font;
@@ -17,6 +21,12 @@ $primary: #ff6060;
         font-size: 1rem;
         font-weight: 500;
         padding: 5px 8px;
+
+        @media (max-width: 450px) {
+            font-size: 0.6rem;
+            min-width: 84px;
+            text-align: center;
+        }
     }
 
 }

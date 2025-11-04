@@ -10,13 +10,25 @@ $primary: #ff6060;
     gap: 15px;
     padding: 8px 10px;
 
-    &__star {
-        width: 2rem;
-        height: 2rem;
+    @media (max-width: 450px) {
+        gap: 7px;
+        margin: 0;
+        padding: 0;
+    }
 
-        &--off {
-            color: #E3E3E3;
+    svg {
+        width: 24px;
+        height: 24px;
+
+        @media (max-width: 450px) {
+            width: 18px;
+            height: 18px;
         }
+
+    }
+
+    &__star--off {
+        color: #E3E3E3;
     }
 
 }
