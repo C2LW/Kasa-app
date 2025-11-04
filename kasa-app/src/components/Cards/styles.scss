@@ -7,6 +7,11 @@ $primary-font: "Montserrat", sans-serif;
     margin: 10px;
     transition: transform 0.3s ease;
 
+    @media (max-width: 450px) {
+        width: auto;
+        height: 255px;
+    }
+
     &__img {
         object-fit: cover;
         width: 100%;

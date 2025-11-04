@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { getOne } from "../../datas/api.js";
 
 import Collapse from "../../components/Collapse/index.jsx";
 import Header from "../../components/Header/index.jsx";
 import Footer from "../../components/Footer/index.jsx";
 import Avatar from "../../components/Avatar/index.jsx";
-
 import Carrousel from "../../components/Carrousel/index.jsx";
 import Rating from "../../components/Rating/index.jsx";
+import Tags from "../../components/Tags/index.jsx";
 
 import "./styles.scss"
-import Tags from "../../components/Tags/index.jsx";
+
 
 
 

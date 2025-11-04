@@ -6,7 +6,6 @@ import "./styles.scss"
 function Galerie() {
 
     const [announcements, setAnnouncements] = useState([])
-    /* const [error, setError] = useState(null); */
 
     useEffect(() => {
         getData()

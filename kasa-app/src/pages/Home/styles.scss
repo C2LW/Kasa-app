@@ -2,9 +2,16 @@
 
 
 .main {
-    margin: 2vh 12vw 0;
+    width: 100%;
+    max-width: 1290px;
+
+    @media (max-width: 768px) {
+        max-width: 645px;
+        ;
+    }
 
     @media (max-width: 450px) {
-        margin: 2vh 12vw 0;
+        max-width: 375px;
+        ;
     }
 }

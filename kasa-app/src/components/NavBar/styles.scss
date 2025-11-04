@@ -7,6 +7,10 @@ $primary-font: "Montserrat", sans-serif;
     gap: 57px;
     margin: 0;
 
+    @media (max-width: 450px) {
+        gap: 40px;
+    }
+
     &__link {
         color: black;
         text-decoration: none;
